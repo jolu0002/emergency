@@ -32,7 +32,39 @@
           <h2>Overskrift</h2>
           <p>Tekst</p>
         </article>
-        <form id="webform"></form>
+        <form id="webform">
+          <div>
+            <label for="name">Fulde navn:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="selectoption">
+            <label for="pletvalg">Vælg plettype</label>
+            <select id="pletvalg" name="pletvalg" placeholder="Vælg plettype">
+              <option value="" disabled selected>Vælg plettype</option>
+              <option value="rødvinsplet">Rødvinsplet</option>
+              <option value="kaffe">Kaffeplet</option>
+              <option value="stearin">Stearinplet</option>
+              <option value="olie">Olie</option>
+            </select>
+          </div>
+          <div class="radiobtn">
+            <label for="radiotekstil">På tekstil</label>
+            <input type="radio" id="radiotekstil" name="radiobtns" />
+            <label for="radiooverflade">På overflade</label>
+            <input type="radio" id="radiooverflade" name="radiobtns" />
+            <label for="radioandet">Andet</label>
+            <input type="radio" id="radioandet" name="radiobtns" />
+          </div>
+          <div class="range">
+            <label for="range">Hvor slem er pletten?</label>
+            <input type="range" id="range" name="rangeslem" />
+          </div>
+          <button>Send</button>
+        </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
