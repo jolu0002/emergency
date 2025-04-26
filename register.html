@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/custom.css" />
+    <link id="colormode" rel="stylesheet" href="css/customlight.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/infographic.css" />
@@ -25,6 +25,16 @@
               >Guide til at finde din type plet</a
             >
           </li>
+          <li>
+            <div>
+              <legend id="switchtext">Dark mode</legend>
+              <label class="switch"
+                ><input id="switchBtn" type="checkbox" /><span
+                  class="slider round"
+                ></span
+              ></label>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
@@ -33,7 +43,7 @@
       <h1>INDBERET</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Find din plet!</h2>
+          <h2>Find metode til at fjerne din plet!</h2>
           <p>
             Har du problemer med en specifik plet eller brug for ekstra
             rådgivning? Udfyld formularen herunder og vi hjælper dig!
@@ -42,7 +52,7 @@
         <form id="webform">
           <div class="fname">
             <label for="name" class="fullname">Fulde navn:</label>
-            <input type="text" id="name" name="name" />
+            <input type="text" id="fName" name="name" />
           </div>
           <div class="fillmail">
             <label for="email" class="mail">E-mail:</label>
@@ -68,24 +78,40 @@
           </div>
           <div class="divrange">
             <label for="range"
-              >Hvor slem er pletten: <span id="rangelevel">0</span></label
-            >
+              >Hvor slem er pletten fra 0-10: <span id="rangelevel"></span
+            ></label>
             <input
               type="range"
               id="range"
               name="range"
               min="0"
-              max="100"
+              max="10"
               value="0"
             />
           </div>
-          <button>Send</button>
+          <button id="submit_btn" type="button">Send</button>
         </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
+        <article id="sum">
+          <div>
+            <h4>Fulde navn:</h4>
+            <p id="sumNavn"></p>
+          </div>
+          <div>
+            <h4>E-mail:</h4>
+            <p id="sumEmail"></p>
+          </div>
+          <div>
+            <h4>Plettype:</h4>
+            <p id="sumPlet"></p>
+          </div>
+          <div>
+            <h4>Sværhedsgrad:</h4>
+            <p id="sumNiveau"></p>
+          </div>
+          <button id="reset_btn" type="reset">Godkend og send</button>
         </article>
       </section>
     </main>
@@ -116,5 +142,6 @@
       </nav>
     </footer>
     <script src="js/form.js"></script>
+    <script src="js/dark.js"></script>
   </body>
 </html>
