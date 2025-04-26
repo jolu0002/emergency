@@ -44,6 +44,7 @@ footer ul {
   padding-left: 1rem;
 }
 
+
 /* LAYOUT FOR SECTIONS */
 #daily,
 #breaking {
@@ -79,4 +80,9 @@ footer ul {
   footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+img {
+  height:100%;
+  width: 100%;
 }
