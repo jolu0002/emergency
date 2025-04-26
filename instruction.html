@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/custom.css" />
+    <link id="colormode" rel="stylesheet" href="css/customlight.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/infographic.css" />
@@ -24,12 +24,22 @@
               >Guide til at finde din type plet</a
             >
           </li>
+          <li>
+            <div>
+              <legend id="switchtext">Dark mode</legend>
+              <label class="switch"
+                ><input id="switchBtn" type="checkbox" /><span
+                  class="slider round"
+                ></span
+              ></label>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1>INSTRUKTION</h1>
+      <h1>TYPISKE PLETTER</h1>
       <section class="info-graphic">
         <svg
           id="Lag_2"
@@ -727,9 +737,9 @@
         </svg>
       </section>
       <section class="info-text">
-        <h2>Overskrift</h2>
+        <h2>Klik på rød prik</h2>
         <article>
-          <p class="placeholder">INFO-TEKST</p>
+          <p class="placeholder"></p>
         </article>
         <aside id="efficiency" class="info-box yellow hide">INFO-BOX</aside>
         <aside id="requirement" class="info-box green hide">INFO-BOX</aside>
@@ -763,5 +773,6 @@
       </nav>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/dark.js"></script>
   </body>
 </html>
