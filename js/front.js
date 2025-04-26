@@ -1,12 +1,37 @@
-const openBtn = document.querySelector(".news_card .read-more");
-const closeBtn = document.querySelector(".news_card dialog button");
-const dialog = document.querySelector(".news_card dialog");
-openBtn.addEventListener("click", openDialog);
-closeBtn.addEventListener("click", closeDialog);
+const openBtn1 = document.querySelector(".news_card:first-of-type .read-more");
+const closeBtn1 = document.querySelector(".news_card:first-of-type dialog button");
+const dialog1 = document.querySelector(".news_card:first-of-type dialog");
+openBtn1.addEventListener("click", openDialog1);
+closeBtn1.addEventListener("click", closeDialog1);
 
-function openDialog() {
-  dialog.showModal();
+function openDialog1() {
+  dialog1.showModal();
 }
-function closeDialog() {
-  dialog.close();
+function closeDialog1() {
+  dialog1.close();
+}
+
+// const openBtn2 = document.querySelector(".news_card:last-child .read-more");
+// const closeBtn2 = document.querySelector(".news_card:last-child dialog button");
+// const dialog2 = document.querySelector(".news_card:last-child dialog");
+// openBtn2.addEventListener("click", openDialog2);
+// closeBtn2.addEventListener("click", closeDialog2);
+
+// function openDialog2() {
+//   dialog2.showModal();
+// }
+// function closeDialog2() {
+//   dialog2.close();
+// }
+const openBtn2 = document.querySelector(".news_card:last-child .read-more");
+const closeBtn2 = document.querySelector(".news_card:last-child dialog button");
+const dialog2 = document.querySelector(".news_card:last-child dialog");
+openBtn2.addEventListener("click", openDialog2);
+closeBtn2.addEventListener("click", closeDialog2);
+
+function openDialog2() {
+  dialog2.showModal();
+}
+function closeDialog2() {
+  dialog2.close();
 }

@@ -53,9 +53,9 @@ function vinInfo() {
     animateBoxes();
   
     document.querySelector(".info-text > h2").textContent = "Rødvinsplet";
-    document.querySelector(".info-text > article > p").textContent = "Lorem ipsum dolor sit amet, velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-    document.querySelector("#efficiency").innerHTML = "<h3>Effektivitet</h3><p>Afhukning er supereffektivt og et af de bedste passificeringsaktiviteter man kan bruge. Også for zombier!</p>";
-    document.querySelector("#requirement").innerHTML = "<h3>Styrke</h3><p>Det kræver en del styrke og træning at hugge hovedet af en zombie.</p>";
+    document.querySelector(".info-text > article > p").textContent = "At fjerne rødvinsplet kan være en udfordring, men med de rigtige metoder kan du ofte fjerne dem effektivt. Her er en kort guide:";
+    document.querySelector("#efficiency").innerHTML = "<h3>Tekstil</h3><p>Salt: Dæk pletten med salt og lad det stå i 5-10 minutter. Børst det bort.</p><p>Varmt vand: Skyl med varmt vand fra bagsiden.</p><p>Husholdningseddike: Bland med vand og anvend på pletten. Vask derefter.</p>";
+    document.querySelector("#requirement").innerHTML = "<h3>Tips</h3><p>Test Først: Test rensemidlet på en skjult del. Undgå Varme og få professionel hjælp ved kæmpe eller svære pletter.</p>";
   }
   function stearinInfo() {
     console.log("stearinInfo");
@@ -63,8 +63,8 @@ function vinInfo() {
     animateBoxes();
   
     document.querySelector(".info-text > h2").textContent = "Stearin";
-    document.querySelector(".info-text > article > p").textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
-    document.querySelector("#efficiency").innerHTML = "<h3>Effektivitet</h3><p>Det er rimelig nyttigt at hugge en arm af en zombie, og skal man gøre det, er skulderen et godt sted at hugge på.";
+    document.querySelector(".info-text > article > p").textContent = "At fjerne stearinpletter kan være en let opgave med de rigtige metoder. Her er en kort guide til, hvordan du kan fjerne stearinpletter fra forskellige overflader:";
+    document.querySelector("#efficiency").innerHTML = "<h3>Tekstil</h3><p>Afkøl: Lad stearinen hærde først.</p><p>Skrab: Skrab let over pletten med en kniv eller et kreditkort for at fjerne det meste af stearinen.</p><p> Læg så et stykke brunt papir eller et tørklæde over pletten og varm det op med et varmt strygejern. Stearinen vil smelte og blive absorberet af papiret.";
     document.querySelector("#requirement").innerHTML = "<h3>Styrke</h3><p>Hvis du kan svinge et scærd (helst en katana), så er det rimelig let.</p>";
   }
   function kaffeInfo() {
