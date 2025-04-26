@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/custom.css" />
+    <link id="colormode" rel="stylesheet" href="css/customlight.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <!-- <link rel="stylesheet" href="css/burger.css" /> -->
@@ -25,6 +25,16 @@
               >Guide til at finde din type plet</a
             >
           </li>
+          <li>
+            <div>
+              <legend id="switchtext">Dark mode</legend>
+              <label class="switch"
+                ><input id="switchBtn" type="checkbox" /><span
+                  class="slider round"
+                ></span
+              ></label>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
@@ -40,7 +50,7 @@
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/redwine2.webp" alt="rødvinsplet teaser" />
           <div class="daily_text">
             <h2>Rødvinsplet?</h2>
             <p>
@@ -54,7 +64,7 @@
           </div>
         </article>
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/stearin2.webp" alt="teaser_img" />
           <div class="daily_text">
             <h2>Stearinplet?</h2>
             <p>
@@ -81,7 +91,7 @@
             rengøringsmarvel. Læs mere og find ud af, hvorfor denne pletfjerner
             er et must-have til dit hjem!
           </p>
-          <img src="" alt="news_img" />
+          <img src="img/pletfjerner2.webp" alt="billede af ny pletfjerner" />
           <dialog>
             <h4>Den Geniale Pletfjerner: Dit Nye Rengøringsmarvel</h4>
             <p class="newsDate">Udkommer d. 20 april 2025</p>
@@ -117,13 +127,66 @@
               <button class="close-dialog">Luk nyhed</button>
             </form>
           </dialog>
-          <a class="read-more" href="">Læs mere</a>
+          <button class="read-more">Læs mere</button>
         </article>
         <article class="news_card">
           <h3>Overfølsom overfor vaskemiddel</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="read-more" href="">Læs mere</a>
+          <p>
+            Overfølsomhed overfor vaskemidler er et almindeligt problem, som
+            mange mennesker oplever. Vaskemidler indeholder en række kemikalier,
+            der kan forårsage hudirritation, allergiske reaktioner eller andre
+            helbredsproblemer hos visse personer. Her er nogle af de vigtigste
+            punkter om overfølsomhed overfor vaskemidler
+          </p>
+          <img src="img/pletfjernere.webp" alt="billede af pletfjernere" />
+          <dialog>
+            <h4>Overfølsomhed overfor vaskemiddel</h4>
+            <img src="img/Apr6-2025-09_44_31-PM.png" alt="" />
+            <p>
+              Overfølsomhed overfor vaskemidler er et almindeligt problem, som
+              mange mennesker oplever. Vaskemidler indeholder en række
+              kemikalier, der kan forårsage hudirritation, allergiske reaktioner
+              eller andre helbredsproblemer hos visse personer. Her er nogle af
+              de vigtigste punkter om overfølsomhed overfor vaskemidler:
+            </p>
+            <p>
+              Årsager til Overfølsomhed Kemiske Ingredienser: Mange vaskemidler
+              indeholder stærke rengøringsstoffer, konserveringsmidler,
+              duftstoffer og farvestoffer, der kan være irriterende for huden.
+              Allergiske Reaktioner: Nogle mennesker kan udvikle allergier mod
+              bestemte ingredienser i vaskemidler, hvilket kan føre til udslæt,
+              kløe og hududslæt. Hyppig Kontakt: Hyppig kontakt med vaskemidler,
+              især uden beskyttende handsker, kan forværre irritationen.
+            </p>
+            <p>
+              Symptomer på Overfølsomhed Hudirritation: Rødme, kløe, tørhed
+              eller skæl på huden. Allergiske Reaktioner: Udslæt, hævelser eller
+              blærer på huden. Åndedrætsproblemer: Nogle kan opleve
+              åndedrætsbesvær eller hoste, når de er udsat for duftstoffer i
+              vaskemidler.
+            </p>
+            <p>
+              Forebyggende Tiltag Brug af Handsker: Anvend beskyttende handsker,
+              når du håndterer vaskemidler. Milde Produkter: Vælg milde eller
+              hypoallergene vaskemidler, der er fri for stærke kemikalier og
+              duftstoffer. God Ventilation: Sørg for god ventilation i området,
+              hvor du bruger vaskemidler, for at mindske indånding af dampe.
+              Hyppig Hudpleje: Brug fugtighedscreme for at holde huden fugtig og
+              beskyttet.
+            </p>
+            <p>
+              Der findes mange alternative vaskemidler, der er designet til at
+              være milde og mindre irriterende. Disse produkter kan være en god
+              løsning for dem, der oplever overfølsomhed. Hvis du mistænker, at
+              du er overfølsom overfor vaskemidler, er det vigtigt at tage de
+              nødvendige forholdsregler for at beskytte din hud og helbred.
+            </p>
+            <!-- The close button -->
+            <form method="dialog">
+              <button class="close-dialog">Luk nyhed</button>
+            </form>
+          </dialog>
+          <button class="read-more">Læs mere</button>
         </article>
         <!-- <article class="news_card">
           <h3></h3>
@@ -161,5 +224,6 @@
       </nav>
     </footer>
     <script src="js/front.js"></script>
+    <script src="js/dark.js"></script>
   </body>
 </html>
