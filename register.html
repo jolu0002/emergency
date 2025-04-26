@@ -19,8 +19,12 @@
           <a href="index.html"> LOGOTYPE </a>
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
+          <li><a class="menuItem" href="instruction.html">Plettyper </a></li>
+          <li>
+            <a class="menuItem" href="register.html"
+              >Guide til at finde din type plet</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -29,20 +33,23 @@
       <h1>INDBERET</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Find din plet!</h2>
+          <p>
+            Har du problemer med en specifik plet eller brug for ekstra
+            rådgivning? Udfyld formularen herunder og vi hjælper dig!
+          </p>
         </article>
         <form id="webform">
-          <div>
-            <label for="name">Fulde navn:</label>
-            <input type="text" id="name" name="name" required />
+          <div class="fname">
+            <label for="name" class="fullname">Fulde navn:</label>
+            <input type="text" id="name" name="name" />
           </div>
-          <div>
-            <label for="email">E-mail:</label>
+          <div class="fillmail">
+            <label for="email" class="mail">E-mail:</label>
             <input type="email" id="email" name="email" required />
           </div>
           <div class="selectoption">
-            <label for="pletvalg">Vælg plettype</label>
+            <label for="pletvalg" class="selectplet">Vælg plettype</label>
             <select id="pletvalg" name="pletvalg" placeholder="Vælg plettype">
               <option value="" disabled selected>Vælg plettype</option>
               <option value="rødvinsplet">Rødvinsplet</option>
@@ -52,16 +59,25 @@
             </select>
           </div>
           <div class="radiobtn">
-            <label for="radiotekstil">På tekstil</label>
+            <label for="radiotekstil" class="tekstil">På tekstil</label>
             <input type="radio" id="radiotekstil" name="radiobtns" />
-            <label for="radiooverflade">På overflade</label>
+            <label for="radiooverflade" class="overflade">På overflade</label>
             <input type="radio" id="radiooverflade" name="radiobtns" />
-            <label for="radioandet">Andet</label>
+            <label for="radioandet" class="andet">Andet</label>
             <input type="radio" id="radioandet" name="radiobtns" />
           </div>
-          <div class="range">
-            <label for="range">Hvor slem er pletten?</label>
-            <input type="range" id="range" name="rangeslem" />
+          <div class="divrange">
+            <label for="range"
+              >Hvor slem er pletten: <span id="rangelevel">0</span></label
+            >
+            <input
+              type="range"
+              id="range"
+              name="range"
+              min="0"
+              max="100"
+              value="0"
+            />
           </div>
           <button>Send</button>
         </form>
@@ -99,5 +115,6 @@
         </ul>
       </nav>
     </footer>
+    <script src="js/form.js"></script>
   </body>
 </html>

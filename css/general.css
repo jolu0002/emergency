@@ -34,7 +34,7 @@ ul,
 
 
 body {
-  font-family: "tekoregular";
+  font-family: "tekolight";
   color: var(--primary-font-color);
   background-color: var(--primary-bg-color);
 }
@@ -130,7 +130,7 @@ a {
 }
 header nav li a {
   margin: 1.5rem;
-  background-color: var(--followup-text-bg-color);
+  /* background-color: var(--followup-text-bg-color); */
   color: var(--followup-text-color);
   font-size: var(--followup-text-size);
   padding: 0.5rem 1rem;
